@@ -296,8 +296,9 @@ void AANGameMode::HandleGameEnd(APlayerController* Winner)
 		}
 	}
 
-	// 공지 후 게임 리셋
-	ResetGame();
+	//// 공지 후 게임 리셋
+	//FTimerHandle EndGameTimerHandle;
+	//GetWorld()->GetTimerManager().SetTimer(EndGameTimerHandle, this, &AANGameMode::ResetGame, 3.0f, false);
 }
 
 void AANGameMode::ResetGame()

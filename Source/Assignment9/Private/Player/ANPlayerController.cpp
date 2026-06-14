@@ -41,4 +41,7 @@ void AANPlayerController::Server_RequestRestart_Implementation()
 void AANPlayerController::Client_ClearUI_Implementation()
 {
 	UpdateUI_Clear();
+
+	/*SetInputMode(FInputModeGameOnly());
+	SetShowMouseCursor(false);*/
 }
